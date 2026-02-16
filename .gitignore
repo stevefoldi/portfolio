@@ -7,10 +7,21 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+
+# Production build output
 dist
 dist-ssr
+build
+out
 *.local
+
+# Environment variables
+.env
+.env*.local
+.vercel/.env.production.local
+.netlify/.env.production.local
 
 # Editor directories and files
 .vscode/*

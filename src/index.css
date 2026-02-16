@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #242424; */
+  background:#EE7752;
+  background:-webkit-gradient(linear, left top, left bottom, from(#cdc871), to(#21293c)) no-repeat;
+  background:linear-gradient(180deg, #cdc871, #21293c) no-repeat;
+  background-size:cover;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,14 +33,23 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
+  color: #fff;
 }
 
 h1 {
+  font-family: "DM Sans", sans-serif;
   font-size: 3.2em;
   line-height: 1.1;
+  font-weight: 900;
+}
+h2 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 2.8em;
+  line-height: 1.1;
+  font-weight: 900;
 }
 
 button {
@@ -65,4 +82,46 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+header img.logo-main {
+  width: 75px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo-heading {
+  font-family: "DM Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 0 8px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+footer .links {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+footer span {
+  padding: 0 10px;
+}
+
+.intro-section,
+.projects-section,
+.skills-section {
+  margin-block: 80px;
+}
+
+section .hero-section img {
+  max-width: 400px;
 }
