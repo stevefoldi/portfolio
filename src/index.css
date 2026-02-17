@@ -1,127 +1,186 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
-  font-family: "Inter", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  font-optical-sizing: auto;
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  /* background-color: #242424; */
-  background:#EE7752;
-  background:-webkit-gradient(linear, left top, left bottom, from(#cdc871), to(#21293c)) no-repeat;
-  background:linear-gradient(180deg, #cdc871, #21293c) no-repeat;
-  background-size:cover;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    /* background-color: #242424; */
+    background:#EE7752;
+    background:-webkit-gradient(linear, left top, left bottom, from(#cdc871), to(#21293c)) no-repeat;
+    background:linear-gradient(180deg, #cdc871, #21293c) no-repeat;
+    background-size:cover;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+    color: #535bf2;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  /* place-items: center; */
-  min-width: 320px;
-  min-height: 100vh;
-  color: #fff;
+    margin: 0;
+    display: flex;
+    /* place-items: center; */
+    min-width: 320px;
+    min-height: 100vh;
+    color: #fff;
 }
 
 h1 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 3.2em;
-  line-height: 1.1;
-  font-weight: 900;
+    font-family: "DM Sans", sans-serif;
+    font-size: 3.2em;
+    line-height: 1.1;
+    font-weight: 900;
 }
 h2 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 2.8em;
-  line-height: 1.1;
-  font-weight: 900;
+    font-family: "DM Sans", sans-serif;
+    font-size: 2.8em;
+    line-height: 1.1;
+    font-weight: 900;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+button:hover { border-color: #646cff; }
 button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+button:focus-visible { outline: 4px auto -webkit-focus-ring-color; }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+    a:hover {
+        color: #747bff;
+    }
+    button {
+        background-color: #f9f9f9;
+    }
 }
 
-header img.logo-main {
-  width: 75px;
-}
+header img.logo-main { width: 75px; }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 header .logo-heading {
-  font-family: "DM Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 600;
-  padding: 0 8px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 8px;
 }
 
 footer a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 footer a:hover {
-  color: #fff;
-  text-decoration: underline;
+    color: #fff;
+    text-decoration: underline;
 }
 footer .links {
-  font-size: 40px;
-  margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 30px;
 }
 footer span {
-  padding: 0 10px;
+    padding: 0 10px;
 }
 
 .intro-section,
 .projects-section,
 .skills-section {
-  margin-block: 80px;
+    margin-block: 80px;
+}
+.narrow-row {
+    max-width: 768px;
+    margin: 0 auto;
 }
 
 section .hero-section img {
-  max-width: 400px;
+    max-width: 400px;
+}
+
+.fader-stage {
+    position: relative; /* */
+    height: 100%; /* Adjust based on text size */
+    overflow: hidden; /* */
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 258px;
+}
+
+.fader-slide {
+    width: 100%;
+    max-width: 300px;
+    position: absolute;
+    top: 14%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fade-in-out 15s infinite;
+}
+.fader-slide i { font-size: 4em; }
+
+/* Define the animation keyframes */
+@keyframes fade-in-out {
+    0%, 100% { opacity: 0; }
+    10% { opacity: 1; }
+    40% { opacity: 0; }
+}
+
+/* Stagger the animations using delays */
+.fader-slide--1 { animation-delay: 0s; }
+.fader-slide--2 { animation-delay: 3s; }
+.fader-slide--3 {animation-delay: 6s; }
+.fader-slide--4 {animation-delay: 9s; }
+.fader-slide--5 {animation-delay: 12s; }
+
+.projects-section .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.projects-section .flex-container .column-two {
+    width: 100%;
+    padding: 1rem;
+    background-color: #f1f1f1;
+}
+
+/* Media query for screens wider than 768px */
+@media (min-width: 768px) {
+    .projects-section .flex-container .column-two {
+        width: calc(50% - 0.5rem);
+    }
 }
