@@ -1,0 +1,223 @@
+.projects-section .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.projects-section .flex-container .column-two {
+    width: 100%;
+    padding: 1rem;
+}
+.projects-section article { text-align: left; }
+.projects-section .skills { margin-bottom: 50px; }
+
+/* Media query for screens wider than 768px */
+@media (min-width: 768px) {
+    .projects-section .flex-container .column-two {
+        width: calc(50% - 0.5rem);
+    }
+}
+
+/* ------- */
+/* ===== CONTAINER ===== */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: stretch;
+    margin-bottom: 80px;
+}
+
+/* ===== CARD ===== */
+.card {
+    flex: 1 1 calc(50% - 2rem);
+    /* GRID = alignment magic */
+    display: grid;
+    row-gap: 0.25rem;
+    grid-template-rows:
+        400px   /* image */
+        auto    /* title (unlimited lines) */
+        1fr     /* description grows */
+        auto;   /* button */
+    margin-bottom: 40px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+    }
+}
+
+/* ===== IMAGE ===== */
+.card-image-wrapper {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 8px;
+    /* transition: transform 0.35s ease, box-shadow 0.35s ease; */
+    --mouse-x: 50%;
+    --mouse-y: 50%;
+    will-change: transform;
+}
+.card-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1) 75%,
+        rgba(0,0,0,0)
+    );
+    display: block;
+    cursor: pointer;
+    /* transition: transform 0.35s ease; */
+    transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* .card-image:hover {
+    transform: scale(1.02);
+} */
+
+.image-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.28);
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.image-overlay span {
+    display: inline-block;
+    background-color: #0047ab;
+    padding: 0.5rem 0.625rem;
+    border-radius: 0.5rem;
+}
+.card-image-wrapper:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+.card-image-wrapper:hover .image-overlay {
+    opacity: 1;
+}
+
+.card-image-wrapper:hover .card-image {
+    transform: scale(1.06);
+}
+.image-light {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(
+        400px circle at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.18),
+        transparent 40%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.card-image-wrapper:hover .image-light {
+    opacity: 1;
+}
+/* ===== TITLE ===== */
+.card-title {
+    padding: 1rem 1rem 0;
+    margin: 0;
+    height: 100%;
+}
+
+/* ===== CONTENT ===== */
+.card-content {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem 1rem 0;
+}
+.card-content p {
+    font-size: 20px;
+}
+.card-content .skills-tags {
+    font-size:14px;
+    font-weight: 500;
+}
+
+/* ===== BUTTON ===== */
+.card-button {
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    margin: 0;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    justify-self: center;
+}
+
+/* ===============================
+MODAL
+================================= */
+/* Overlay (scrollable) */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem 1rem;
+    z-index: 999;
+    animation: fadeIn 0.25s ease;
+}
+
+/* Modal content */
+.modal-content {
+    position: relative;
+    max-width: 56.25rem;
+    width: 100%;
+    padding-right: 2.8rem;
+}
+
+/* Image */
+.modal-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #efefef;
+    border-radius: 8px; /* optional for polished look */
+}
+
+/* Close button */
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.6);
+    color: #000;
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0.125rem 0.625rem 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+    animation-delay: 0.1s;
+}
+
+.modal-close:hover {
+    background: rgba(255, 255, 255, 0.85);
+    color: #1a1a1a;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

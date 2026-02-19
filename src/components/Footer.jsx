@@ -9,7 +9,7 @@ function Footer() {
                 <span className="linkedin"><i className="fa-brands fa-linkedin"></i></span>
                 <span className="email"><a href="mailto:stevefoldi@gmail.com"><i className="fa-solid fa-envelope"></i></a></span>
             </div>
-            <div>&copy; {currentYear} Steve Foldi, All right reserved.</div>
+            <div>&copy; {currentYear} Steve Foldi, All rights reserved.</div>
         </footer>
     )
 }

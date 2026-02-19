@@ -1,29 +1,106 @@
+import './skills.css'
+
+const skillGroups = [
+    {
+        title: "Frontend Architecture",
+        description:
+        "Building responsive, accessible interfaces with modern component-driven design.",
+        items: [
+            { name: "React", type: "core" },
+            { name: "JavaScript" },
+            { name: "HTML5" },
+            { name: "CSS3" },
+            { name: "Responsive Design" },
+        ]
+    },
+    {
+        title: "CMS & Template Development",
+        description:
+        "Developing custom themes, templates, and content systems for WordPress and other platforms.",
+        items: [
+            { name: "WordPress", type: "wordpress" },
+            { name: "WooCommerce" },
+            { name: "ACF" },
+            { name: "Liquid" },
+            { name: "Velocity" }
+        ]
+    },
+    {
+        title: "API & Data Integration",
+        description:
+        "Connecting applications with REST APIs and structured data systems.",
+        items: [
+            { name: "REST APIs" },
+            { name: "Node.js" },
+            { name: "MySQL" },
+            { name: "JSON" }
+        ]
+    },
+    {
+        title: "Performance & Optimization",
+        description:
+        "Improving load times, accessibility scores, and overall user experience.",
+        items: [
+            { name: "Lighthouse Optimization" },
+            { name: "Lazy Loading" },
+            { name: "SEO Best Practices" }
+        ]
+    },
+    {
+        title: "Workflow & Tooling",
+        description:
+        "Version control, local development environments, and deployment workflows.",
+        items: [
+            { name: "Git" },
+            { name: "GitHub" },
+            { name: "Docker" },
+            { name: "VS Code" }
+        ]
+    },
+    {
+        title: "Adaptability & Additional Skills",
+        description:
+        "Able to quickly learn new platforms, languages, or frameworks as required by project needs.",
+        items: [
+            { name: "Jenkins" },
+            { name: "Shopify" },
+            { name: "Headless CMS" },
+            { name: "New Frameworks / Languages" }
+        ]
+    }
+];
+
 function Skills() {
     return (
-        <section className="skills-section">
-            <h3>Language</h3>
-            <p>HTML5, CSS3, Javascript, PHP, Velocity, Net.data, Netcommerce</p>
+        <section className="skills skills-section">
+            <div className="skills-container">
+                {/* Header */}
+                <div className="skills-header">
+                    <h2>How I Build & Adapt</h2>
+                    <p>I design and develop scalable web experiences while quickly adapting to new tools and platforms.</p>
+                </div>
 
-            <h3>Frameworks, Compiles and Package Managers</h3>
-            <p>Sass, Less, Gulp, NPM, Bootstrap, Laravel, jQuery, Vue2.js, Node.js, Backbone.js and Handlebars</p>
-            
-            <h3>Source</h3>
-            <p>Subversion, Git(Github, Gitlab and Bitbucket)</p>
+                {/* Grid */}
+                <div className="skills-grid">
+                {skillGroups.map((group) => (
+                    <div className="skill-card" key={group.title}>
+                    <h3>{group.title}</h3>
+                    <p className="skill-description">{group.description}</p>
 
-            <h3>Design</h3>
-            <p>Photoshop, Illustrator and InDesign</p>
-
-            <h3>Hosting Providers</h3>
-            <p>AWS, Digital Ocean, Media Temple and Vultr</p>
-
-            <h3>Databases</h3>
-            <p>MySql and DB2</p>
-
-            <h3>Operating System</h3>
-            <p>Mac, Windows and Linux</p>
-
-            <h3>Other Stuff</h3>
-            <p>Terminal, Wordpress, Squarespace, Shopify, API and Various CLI's</p>
+                    <div className="skill-tags">
+                        {group.items.map((item) => (
+                        <span
+                        key={item.name}
+                        className={`skill-tag ${item.type ? item.type : ""}`}
+                        >
+                            {item.name}
+                        </span>
+                        ))}
+                    </div>
+                    </div>
+                ))}
+                </div>
+            </div>
         </section>
     )
 }
