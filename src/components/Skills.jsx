@@ -3,43 +3,42 @@ import './skills.css'
 const skillGroups = [
     {
         title: "Frontend Architecture",
-        description:
-        "Building responsive, accessible interfaces with modern component-driven design.",
+        description: "Building responsive, accessible interfaces with modern component-driven design.",
         items: [
             { name: "React", type: "core" },
+            { name: "Next.js", type: "core" },
+            { name: "TypeScript", type: "core" },
             { name: "JavaScript" },
             { name: "HTML5" },
             { name: "CSS3" },
-            { name: "Responsive Design" },
+            { name: "Responsive Design" }
         ]
     },
     {
         title: "CMS & Template Development",
-        description:
-        "Developing custom themes, templates, and content systems for WordPress and other platforms.",
+        description: "Developing custom themes, templates, and content systems for WordPress and other platforms.",
         items: [
             { name: "WordPress", type: "wordpress" },
-            { name: "WooCommerce" },
-            { name: "ACF" },
+            { name: "Tina.io" },
             { name: "Liquid" },
-            { name: "Velocity" }
+            { name: "Velocity" },
+            { name: "ACF" },
+            { name: "WooCommerce" }
         ]
     },
     {
         title: "API & Data Integration",
-        description:
-        "Connecting applications with REST APIs and structured data systems.",
+        description: "Connecting applications with REST APIs and structured data systems.",
         items: [
             { name: "REST APIs" },
+            { name: "JSON" },
             { name: "Node.js" },
-            { name: "MySQL" },
-            { name: "JSON" }
+            { name: "MySQL" }
         ]
     },
     {
         title: "Performance & Optimization",
-        description:
-        "Improving load times, accessibility scores, and overall user experience.",
+        description: "Improving load times, accessibility scores, and overall user experience.",
         items: [
             { name: "Lighthouse Optimization" },
             { name: "Lazy Loading" },
@@ -48,19 +47,20 @@ const skillGroups = [
     },
     {
         title: "Workflow & Tooling",
-        description:
-        "Version control, local development environments, and deployment workflows.",
+        description: "Version control, local development environments, and deployment workflows.",
         items: [
             { name: "Git" },
             { name: "GitHub" },
+            { name: "Vite" },
             { name: "Docker" },
-            { name: "VS Code" }
+            { name: "VS Code" },
+            { name: "Terminal" }
+
         ]
     },
     {
         title: "Adaptability & Additional Skills",
-        description:
-        "Able to quickly learn new platforms, languages, or frameworks as required by project needs.",
+        description: "Able to quickly learn new platforms, languages, or frameworks as required by project needs.",
         items: [
             { name: "Jenkins" },
             { name: "Shopify" },
@@ -74,13 +74,11 @@ function Skills() {
     return (
         <section className="skills skills-section">
             <div className="skills-container">
-                {/* Header */}
                 <div className="skills-header">
                     <h2>How I Build & Adapt</h2>
                     <p>I design and develop scalable web experiences while quickly adapting to new tools and platforms.</p>
                 </div>
 
-                {/* Grid */}
                 <div className="skills-grid">
                 {skillGroups.map((group) => (
                     <div className="skill-card" key={group.title}>

@@ -1,7 +1,7 @@
 # Steve Foldi  
-Frontend Developer | WordPress, React & Templating Systems  
+Frontend Developer | WordPress, React & Templating Systems
 
-Frontend-focused developer building scalable WordPress themes, modern React applications, and CMS-driven experiences using Liquid and Velocity.  
+Frontend-focused developer building scalable WordPress themes, modern React applications, and CMS-driven experiences using Liquid and Velocity.
 
 I specialize in creating clean, maintainable, performance-optimized frontends that integrate seamlessly into existing systems. Comfortable working across marketing sites, ecommerce platforms, and custom web applications in remote-first environments.
 
@@ -9,21 +9,21 @@ I specialize in creating clean, maintainable, performance-optimized frontends th
 
 ## 💻 Core Technologies
 
-- React  
-- JavaScript (ES6+)  
-- WordPress (Custom Theme Development)  
-- PHP  
-- HTML5 / CSS3  
-- SCSS  
-- REST APIs  
+- React
+- JavaScript (ES6+)
+- WordPress (Custom Theme Development)
+- PHP
+- HTML5 / CSS3
+- SCSS
+- REST APIs
 
 ---
 
 ## 🧩 CMS & Templating Experience
 
-- **WordPress** – Custom themes, Advanced Custom Fields (ACF), Gutenberg blocks  
-- **Liquid** – Shopify theme development and customization  
-- **Apache Velocity** – Java-based templating for enterprise environments  
+- **WordPress** – Custom themes, Advanced Custom Fields (ACF)
+- **Liquid** – theme development and customization
+- **Apache Velocity** – Java-based templating for enterprise environments
 
 Experienced adapting to structured CMS workflows and integrating frontend components within established backend systems.
 
@@ -31,13 +31,13 @@ Experienced adapting to structured CMS workflows and integrating frontend compon
 
 ## 🛠 Engineering Workflow
 
-- Component-based architecture  
-- Modular theme and template structure  
-- Git & GitHub version control workflows  
-- API integrations  
-- Performance optimization & SEO best practices  
-- Responsive and accessible UI development  
-- Comfortable integrating into existing codebases and tooling  
+- Component-based architecture
+- Modular theme and template structure
+- Git & GitHub version control workflows
+- API integrations
+- Performance optimization & SEO best practices
+- Responsive and accessible UI development
+- Comfortable integrating into existing codebases and tooling
 
 ---
 
@@ -55,7 +55,7 @@ Experienced adapting to structured CMS workflows and integrating frontend compon
 - Clean state management patterns
 - Fully responsive design
 
-### Shopify Customization (Liquid)
+### Liquid Customization
 - Custom section development
 - Template modifications
 - Layout and styling enhancements
@@ -69,10 +69,10 @@ Experienced adapting to structured CMS workflows and integrating frontend compon
 
 ## 🌎 Remote Work Ready
 
-- Comfortable working asynchronously  
-- Strong written communication  
-- Task-focused development approach  
-- Experience collaborating via Git-based workflows  
+- Comfortable working asynchronously
+- Strong written communication
+- Task-focused development approach
+- Experience collaborating via Git-based workflows
 
 ---
 
@@ -84,6 +84,6 @@ I focus on building structured, maintainable frontends that are easy to extend a
 
 ## 📫 Contact
 
-- Email: stevefoldi@gmail.com  
-- LinkedIn: https://www.linkedin.com/in/steve-foldi/  
-- Portfolio: https://stevefoldi.com/  
+- Email: stevefoldi@gmail.com
+- LinkedIn: https://www.linkedin.com/in/steve-foldi/
+- Portfolio: https://stevefoldi.com/

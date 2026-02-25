@@ -21,7 +21,7 @@ export default [
         },
         title: "Herbalife Careers",
         skills: "Liquid, Javascript/Jquery, HTML5, CSS3, Foundation",
-        services: "CMS build, Handle UAT process with client, multi-lingual",
+        services: "External and Internal sites. Custom multi-lingual site built using liquid code. Provided mocks for better optizing sections for UX/UI. Ran UAT process. Worked with client to build out custom features.",
         url: "http://herbalifecareers.ttcportals.com/"
     },
     {
@@ -32,7 +32,7 @@ export default [
         },
         title: "Nuvance Health Careers",
         skills: "Liquid, Javascript/Jquery, HTML5, CSS3, Foundation",
-        services: "CMS build, Handle UAT process with client",
+        services: "External and Internal sites built with custom CMS using company platform. Ran UAT process. Documented and demo the site for client. Optimized video banners for client.",
         url: "https://careers.nuvancehealth.org/"
     },
     {
@@ -43,7 +43,7 @@ export default [
         },
         title: "Marcus Hotels Careers",
         skills: "Liquid, Javascript/Jquery, HTML5, CSS3, Foundation",
-        services: "CMS build, Handle UAT process with client",
+        services: "External, Internal and Event sites built with custom CMS using company platform. Provided mocks for better optizing sections for UX/UI. Ran UAT process. Documented and demo the site for client.",
         url: "https://hotels.marcuscareers.com/"
     },
     {
@@ -54,8 +54,8 @@ export default [
         },
         title: "Billy Graham Evangelistic Association Careers",
         skills: "Liquid, Javascript/Jquery, HTML5, CSS3, Foundation",
-        services: "CMS build, Handle UAT process with client",
-        url: "https://google.com"
+        services: "Custom build and CMS using company platform. Ran UAT process. Documented and demo the site for client. Optimized video banners for client.",
+        url: "https://careers.billygraham.org/"
     },
     {
         id: 5,
@@ -65,8 +65,8 @@ export default [
         },
         title: "company Careers",
         skills: "Liquid, Javascript/Jquery, HTML5, CSS3, Foundation",
-        services: "CMS build, Handle UAT process with client",
-        url: "https://google.com"
+        services: "Built both fully custom US and Canada multi-lingual sites and ran UAT process.",
+        url: "https://careers.savers.com/"
     },
     {
         id: 6,
@@ -76,8 +76,8 @@ export default [
         },
         title: "company Careers",
         skills: "Liquid, Javascript/Jquery, HTML5, CSS3, Foundation",
-        services: "CMS build, Handle UAT process with client",
-        url: "https://google.com"
+        services: "Built fully custom site using client mocks and built custom CMS using company platform. Ran UAT process. Documented and demo the site for client.",
+        url: "https://careers.precoa.com/"
     },
     {
         id: 7,
@@ -87,8 +87,8 @@ export default [
         },
         title: "company Careers",
         skills: "Liquid, Javascript/Jquery, HTML5, CSS3, Foundation",
-        services: "CMS build, Handle UAT process with client",
-        url: "https://google.com"
+        services: "Built custom site and ran UAT process.",
+        url: "https://careers.rideuta.com/"
     },
     {
         id: 8,
@@ -98,8 +98,8 @@ export default [
         },
         title: "company Careers",
         skills: "Liquid, Javascript/Jquery, HTML5, CSS3, Foundation",
-        services: "CMS build, Handle UAT process with client",
-        url: "https://google.com"
+        services: "Built fully custom site and CMS using company platform. Provided mocks for better optizing sections for UX/UI. Ran UAT process. Documented and demo the site for client.",
+        url: "http://shutterflycareers.ttcportals.com/"
     },
     {
         id: 9,
@@ -109,7 +109,7 @@ export default [
         },
         title: "SAIC Careers",
         skills: "Liquid, Javascript/Jquery, HTML5, CSS3, Foundation",
-        services: "CMS build, Handle UAT process with client",
+        services: "External and Internal template builds. Multiple redesign builds over the years. Provided mocks for better optizing sections for UX/UI. Worked with client to build out custom features.",
         url: "https://jobs.saic.com/"
     },
     {
@@ -120,8 +120,8 @@ export default [
         },
         title: "company Careers",
         skills: "Liquid, Javascript/Jquery, HTML5, CSS3, Foundation",
-        services: "CMS build, Handle UAT process with client",
-        url: "https://google.com"
+        services: "Template site build using company platform. Multiple redesign builds over the years. Worked with client to build out custom features.",
+        url: "https://careers.peacehealth.org/"
     },
     {
         id: 11,
@@ -131,8 +131,8 @@ export default [
         },
         title: "company Careers",
         skills: "Liquid, Javascript/Jquery, HTML5, CSS3, Foundation",
-        services: "CMS build, Handle UAT process with client",
-        url: "https://google.com"
+        services: "External and Internal template site builds. Provided mocks for better optizing sections for UX/UI. Ran UAT process. Optimized video banners for client.",
+        url: "hhttps://careers.myeyedr.com/"
     },
     {
         id: 12,
@@ -142,7 +142,7 @@ export default [
         },
         title: "company Careers",
         skills: "Liquid, Javascript/Jquery, HTML5, CSS3, Foundation",
-        services: "CMS build, Handle UAT process with client",
-        url: "https://google.com"
+        services: "External and Internal custom built sites. Provided mocks for better optizing sections for UX/UI. Multiple redesign builds over the years.",
+        url: ""
     },
 ]

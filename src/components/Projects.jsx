@@ -52,7 +52,7 @@ function Projects() {
                             <p>{project.services}</p>
                             <p className="skills-tags">{project.skills}</p>
                         </div>
-                        <a href={project.url} className="card-button" target="_blank">View Project</a>
+                        {project.url && <a href={project.url} className="card-button"><i class="fa-solid fa-circle-chevron-left"></i> View Site</a>}
                     </div>
                 ))}
             </section>
@@ -81,7 +81,7 @@ function Projects() {
                             <p>{project.services}</p>
                             <p className="skills-tags">{project.skills}</p>
                         </div>
-                        <a href={project.url} className="card-button">View Project</a>
+                        {project.url && <a href={project.url} className="card-button"><i class="fa-solid fa-circle-chevron-left"></i> View Site</a>}
                     </div>
                 ))}
             </section>
